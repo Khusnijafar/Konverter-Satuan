@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Satuan - Aplikasi Konversi Lengkap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h1>Konverter Satuan</h1>
+                </div>
+                <p class="subtitle">Aplikasi konversi satuan untuk pelajar, mahasiswa, dan umum</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="converter-card">
+                <div class="category-selector">
+                    <label for="category">Pilih Kategori:</label>
+                    <select id="category" onchange="changeCategory()">
+                        <option value="panjang">Panjang</option>
+                        <option value="berat">Berat</option>
+                        <option value="luas">Luas</option>
+                        <option value="volume">Volume</option>
+                        <option value="suhu">Suhu</option>
+                        <option value="mata-uang">Mata Uang</option>
+                        <option value="waktu">Waktu</option>
+                        <option value="kecepatan">Kecepatan</option>
+                        <option value="digital">Digital</option>
+                        <option value="energi">Energi</option>
+                    </select>
+                </div>
+
+                <div class="converter-inputs">
+                    <div class="input-group">
+                        <label for="fromUnit">Dari:</label>
+                        <select id="fromUnit" onchange="convert()"></select>
+                    </div>
+                    
+                    <div class="swap-button" onclick="swapUnits()">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="toUnit">Ke:</label>
+                        <select id="toUnit" onchange="convert()"></select>
+                    </div>
+                </div>
+
+                <div class="value-input">
+                    <label for="inputValue">Nilai:</label>
+                    <input type="number" id="inputValue" placeholder="Masukkan nilai" oninput="convert()">
+                </div>
+
+                <div class="result">
+                    <label>Hasil:</label>
+                    <div class="result-container">
+                        <div class="result-value" id="result">0</div>
+                        <button class="copy-button" onclick="copyResult()" title="Salin hasil">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="quick-conversions" id="quickConversions">
+                    <!-- Quick conversion buttons will be added here -->
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3><i class="fas fa-info-circle"></i> Informasi</h3>
+                <div id="categoryInfo">
+                    <p>Pilih kategori konversi di atas untuk memulai. Aplikasi ini mendukung berbagai jenis konversi satuan yang sering digunakan dalam pembelajaran dan kehidupan sehari-hari.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Konverter Satuan - Dibuat untuk membantu pelajar, mahasiswa, dan umum</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
