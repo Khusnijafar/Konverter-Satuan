@@ -1,6 +1,6 @@
 # Konverter Satuan - Aplikasi Konversi Lengkap
 
-Aplikasi web sederhana dan modern untuk konversi berbagai jenis satuan yang dirancang khusus untuk pelajar, mahasiswa, dan masyarakat umum.
+Aplikasi konverter satuan online gratis yang membantu Anda melakukan konversi berbagai jenis satuan dengan mudah dan akurat. Cocok untuk pelajar, mahasiswa, dan siapa saja yang membutuhkan konversi satuan dalam kehidupan sehari-hari.
 
 ## 🌟 Fitur Utama
 
