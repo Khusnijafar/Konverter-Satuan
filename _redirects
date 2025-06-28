@@ -1,5 +1,0 @@
-# Explicitly serve index.html for root path
-/ /index.html 200
-
-# Handle 404 errors for other paths
-/* /index.html 404 
