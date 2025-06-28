@@ -1,5 +1,5 @@
-# Redirect www to non-www for better SEO
-https://konvertersatuan.netlify.app/* https://konvertersatuan.netlify.app/:splat 301!
+# Explicitly serve index.html for root path
+/ /index.html 200
 
-# Handle 404 errors
+# Handle 404 errors for other paths
 /* /index.html 404 
